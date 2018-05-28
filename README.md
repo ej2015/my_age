@@ -22,7 +22,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Mixin the calculator module
+
+```
+class User
+  attr_accessor :dob
+  include MyAge::Calculator
+end
+
+user = User.new
+user.age
+## age as of today
+user.age(date)
+## age as of date
+user.age_as_of_tomorrow
+## age as of tomorrow
+```
+
+Use you own dob attribute
+
+``` 
+class User
+  attr_accessor :date_of_birth
+  include MyAge::Calculator
+  my_dob :date_of_birth
+end
+
+##everything else is the same
+```
+
+
 
 ## Development
 
