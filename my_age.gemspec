@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["zorro.ej@gmail.com"]
 
   spec.summary       = %q{Calculate my age.}
-	spec.description   = %q{Default calendr: Gregorian. Though would like to expand to other calendars too}
+	spec.description   = %q{a simple module to be mixed in to provide an age method. Also provide a CLI. Default calendr: Gregorian. Though would like to expand to other calendars too}
   spec.homepage      = "https://github.com/ej2015/my_age.git"
   spec.license       = "MIT"
 
