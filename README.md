@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-Mixin the calculator module
+Mixin the calculator module and call `age` method. If no date is supplied in arguments then the age is calculated as of today.
 
 ```
 class User
@@ -46,6 +46,19 @@ end
 
 ##everything else is the same
 ```
+## Use ActiveSupport Helpers
+You can use the helpers in `DateAndTime::Calculations` like this:
+
+```
+## with #end_of_month, you can all
+user.age_as_of_end_of_month
+
+## or with #months_since
+user.age_as_of_months_since(9)
+
+## to be explicit, you can call
+user.age_as_of_today  ## same as user.age
+```
 
 ## CLI
 
@@ -56,6 +69,7 @@ $ #=> 4
 $ my_age is -d 1981-01-08
 $ #=> age as of today
 
+##ActiveSupport helpers work here too
 $ my_age is -d 1981-01-03 -a tomorrow
 $ #=> age as of tomorrow
 
