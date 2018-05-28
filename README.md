@@ -18,36 +18,36 @@ Or install it yourself as:
 
 ## Usage
 
-Mixin the calculator module and call `age` method. If no date is supplied in arguments then the age is calculated as of today.
+Mixin the `Age` module and call `age` method. 
 
 ```
 class User
   attr_accessor :dob
-  include MyAge::Calculator
+  include MyAge
 end
 
 user = User.new
+## by default, age is calculated as of today
 user.age
-## age as of today
+## but you can supply a specific date
 user.age(date)
-## age as of date
+## there are a host of helpers starting with 'age_as_of_' to specify the date too 
 user.age_as_of_tomorrow
-## age as of tomorrow
 ```
 
-Use you own dob attribute
+If your date-of-birth attribute is not called `dob`, you can assign it with `my_dob` so the gem knows where to look for it.
 
 ``` 
 class User
   attr_accessor :date_of_birth
-  include MyAge::Calculator
-  my_dob :date_of_birth
+  include MyAge
+  my_dob :date_of_birthi  #my attribute name
 end
 
 ##everything else is the same
 ```
 ## Use ActiveSupport Helpers
-You can use the helpers in `DateAndTime::Calculations` like this:
+You can use the helpers in `DateAndTime::Calculations`. Methods will look like `age_as_of_helper`:
 
 ```
 ## with #end_of_month, you can all
