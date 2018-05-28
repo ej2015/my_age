@@ -2,7 +2,6 @@ require "my_age/helper"
 
 module MyAge
 	module Calculator
-		include MyAge::Helper
 
 		unless respond_to?(:dob)
 			def self.included(base)
