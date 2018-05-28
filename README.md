@@ -71,7 +71,7 @@ $ #=> age as of today
 
 ##ActiveSupport helpers work here too
 $ my_age is -d 1981-01-03 -a tomorrow
-$ #=> age as of tomorrow
+$ my_age is -d 'years_ago(5)' -a tomorrow  ##=> 5
 
 ```
 
