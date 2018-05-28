@@ -12,5 +12,10 @@ Feature: Age
 	Scenario: Use -d and -a
 		When I run `my_age is -d 1981-01-02 -a 1991-01-02`
 		Then the output should contain "10"
+		
+	Scenario: default to today 
+		When I run `my_age is -d last_year`
+		Then the output should contain "1"
+
 
 
