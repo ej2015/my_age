@@ -31,7 +31,7 @@ user = User.new
 user.age
 ## but you can supply a specific date
 user.age(date)
-## there are a host of helpers starting with 'age_as_of_' to specify the date too 
+## there is a host of helpers starting with 'age_as_of_' to specify the date too 
 user.age_as_of_tomorrow
 ```
 
@@ -47,7 +47,7 @@ end
 ##everything else is the same
 ```
 ## Use ActiveSupport Helpers
-You can use the helpers in `DateAndTime::Calculations`. Methods will look like `age_as_of_helper`:
+You can use the helpers in `DateAndTime::Calculations`. Methods are constructed like `age_as_of_helper`:
 
 ```
 ## with #end_of_month, you can all
