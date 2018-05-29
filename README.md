@@ -41,7 +41,7 @@ If your date-of-birth attribute is not called `dob`, you can assign it using `my
 class User
   attr_accessor :date_of_birth
   include MyAge
-  my_dob :date_of_birthi  #my attribute name
+  my_dob :date_of_birth  #my attribute name
 end
 
 ##everything else is the same
