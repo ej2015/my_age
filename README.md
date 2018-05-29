@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-Mixin the `Age` module and call `age` method. 
+Mixin `MyAge` module and call `age` method. It assumes your class has an attribute called `dob` that stores the date of birth.
 
 ```
 class User
@@ -35,7 +35,7 @@ user.age(date)
 user.age_as_of_tomorrow
 ```
 
-If your date-of-birth attribute is not called `dob`, you can assign it with `my_dob` so the gem knows where to look for it.
+If your date-of-birth attribute is not called `dob`, you can assign it using `my_dob` so the gem knows where to look for it.
 
 ``` 
 class User
@@ -47,13 +47,13 @@ end
 ##everything else is the same
 ```
 ## Use ActiveSupport Helpers
-You can use the helpers in `DateAndTime::Calculations`. Methods are constructed like `age_as_of_helper`:
+You can use the helpers in `DateAndTime::Calculations`. Methods are constructed like `age_as_of_helper`. All dates specified this way are relative to today.
 
 ```
-## with #end_of_month, you can all
+## with #end_of_month, you can call
 user.age_as_of_end_of_month
 
-## or with #months_since
+## this gives you the age as of 9 months later from today
 user.age_as_of_months_since(9)
 
 ## to be explicit, you can call
