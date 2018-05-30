@@ -1,6 +1,5 @@
 require 'thor'
 require 'my_age'
-require 'pry'
 module MyAge
 	class CLI < Thor
     attr_accessor :dob

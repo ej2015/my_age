@@ -47,7 +47,7 @@ end
 ##everything else is the same
 ```
 ## Use ActiveSupport Helpers
-You can use the helpers in `DateAndTime::Calculations`. Methods are constructed like `age_as_of_helper`. All dates specified this way are relative to today.
+You can use the helpers in `active_support/core_ext/date/calculations`. Methods are constructed like `age_as_of_helper`. All dates specified this way are relative to today.
 
 ```
 ## with #end_of_month, you can call

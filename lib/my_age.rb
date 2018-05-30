@@ -1,5 +1,6 @@
-require "active_support/core_ext/object"
-require "active_support/core_ext/date_and_time/calculations"
+require 'active_support'
+require "active_support/core_ext/object/blank"
+require "active_support/core_ext/date/calculations"
 require "my_age/version"
 require "my_age/calculator"
 require "my_age/helper"
