@@ -14,7 +14,6 @@ module MyAge
 			puts self.age(date)
 		end
 
-
 		private
 		def get_date(date)
 			if date =~ /^\d{4}-\d{2}-\d{2}$/
