@@ -25,7 +25,7 @@ module MyAge
 			Date.send(date)
 		end
 
-		def date_from_active_surrpot_core_ext_helper(date)
+		def date_from_active_support_core_ext_helper(date)
 			dates = date.delete(")").split("(")
 			method = dates[0].to_sym
 			arg = dates[1]
