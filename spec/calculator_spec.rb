@@ -30,7 +30,7 @@ describe MyAge::Calculator do
 
 			it "is works without argument" do
 				user.dob = Date.new(2000,1,1)
-				expect(user.age).to be >= 18 
+				expect(user.age).to be >= 18
 			end
 
 			context "non-leap birthday" do
@@ -127,8 +127,7 @@ describe MyAge::Calculator do
 					expect(user.age(Date.new(2106,3,1))).to eq 110
 				end
 
-			end	
-
+			end
 
 			context "before special non-leap year e.g. 2100" do
 				before :each do

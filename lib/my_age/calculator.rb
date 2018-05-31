@@ -27,7 +27,7 @@ module MyAge
 
 		private
 		def date_to_int(date)
-			date.strftime("%Y%m%d").to_i 
+			date.strftime("%Y%m%d").to_ 
 		end
 
 		def today
