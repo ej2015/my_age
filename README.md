@@ -1,5 +1,5 @@
 # MyAge
-https://travis-ci.org/ej2015/my_age.svg?branch=master
+[![Build Status](https://travis-ci.org/ej2015/my_age.svg?branch=master)](https://travis-ci.org/ej2015/my_age)
 ## Installation
 
 Add this line to your application's Gemfile:
