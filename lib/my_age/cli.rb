@@ -20,15 +20,18 @@ module MyAge
 			if date =~ /^\d{4}-\d{2}-\d{2}$/
 				DateTime.strptime(date, "%Y-%m-%d")
 			else
-				dates = date.delete(")").split("(")
-				if dates.length == 2
-					Date.today.send(dates[0].to_sym, dates[1].to_i)
-				else
-					Date.today.send(dates[0].to_sym)
-				end
+				date_from_active_support_core_ext_helper(date)
 			end
 		rescue NoMethodError
 			Date.send(date)
+		end
+
+		def date_from_active_surrpot_core_ext_helper(date)
+			dates = date.delete(")").split("(")
+			method = dates[0].to_sym
+			arg = dates[1]
+			arg.nil? ? Date.today.send(method) :
+				         Date.today.send(method, arg.to_i)
 		end
 
 	end
