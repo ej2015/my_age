@@ -137,7 +137,7 @@ describe MyAge::Calculator do
 				it "is 4 on 4th birthday" do
 					expect(user.age(Date.new(2100,3,1))).to eq 4
 				end
-			end	
+			end
 		end
 	end
 
